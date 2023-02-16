@@ -30,11 +30,11 @@ sign_in=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.LINK_TEXT,
 
 user_name=WebDriverWait(driver,10).until(EC.presence_of_element_located((By.ID,'username')))
 user_name.clear()
-user_name.send_keys('smartiswarchand@gmail.com')
+user_name.send_keys('pass')
 
 password=WebDriverWait(driver,10).until(EC.presence_of_element_located((By.ID,'password')))
 password.clear()
-password.send_keys('kgs18101998',Keys.ENTER)
+password.send_keys('pass',Keys.ENTER)
 
 # You can set your own pause time. My laptop is a bit slow so I use 1 sec
 
