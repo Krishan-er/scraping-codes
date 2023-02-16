@@ -54,11 +54,11 @@ option.add_experimental_option("prefs", {
 driver=webdriver.Chrome(executable_path='./chromedriver.exe',options=option)
 driver.get('https://www.facebook.com')
 mail_id = driver.find_element_by_id('email')
-mail_id.send_keys('smartiswarchand@gmail.com')
+mail_id.send_keys('mail')
 mail_id.send_keys(Keys.TAB)
 
 password = driver.find_element_by_id('pass')
-password.send_keys('kgs18101998')
+password.send_keys('pass')
 password.send_keys(Keys.ENTER)
 
 LOCATION = 'indore'
