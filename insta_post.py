@@ -39,11 +39,11 @@ driver = webdriver.Chrome(options=option, executable_path='./chromedriver.exe')
 driver.get('https://www.instagram.com')
 time.sleep(3)
 mail_id = driver.find_element_by_xpath('//input[@name="username"]')
-mail_id.send_keys('xyzishwar@gmail.com')
+mail_id.send_keys('mail')
 mail_id.send_keys(Keys.TAB)
 
 password = driver.find_element_by_xpath('//input[@name="password"]')
-password.send_keys('kgs18101998')
+password.send_keys('pass')
 password.send_keys(Keys.ENTER)
 time.sleep(10)
 
